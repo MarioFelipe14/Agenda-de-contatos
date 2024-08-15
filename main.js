@@ -1,5 +1,6 @@
 const form = document.getElementById('agenda')
-
+const nome = []
+const numero = []
 
 let linhas= ''
 
@@ -28,6 +29,7 @@ function adicionaContato(){
     let linha = '<tr>'
     linha += `<td>${inputNomeContato.value}</td>`
     linha += `<td>${inputNumeroContato.value}</td>`
+    linha += '</tr>'
 
     linhas=linha
 
