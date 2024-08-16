@@ -20,14 +20,14 @@ function adicionaContato(){
         alert(`O número: ${inputNumeroContato.value} já foi inserido`)
     } else{
     numero.push(inputNumeroContato.value)
-    Contato.push(inputNomeContato.value)
+    nome.push(inputNomeContato.value)
 }
 
     let linha = '<tr>'
     linha += `<td>${inputNomeContato.value}</td>`;
     linha += `<td>${inputNumeroContato.value}</td>`;
     linha += `<td><button class="excluir-btn" onclick="excluirContato(${
-        nomes.length - 1
+        nome.length - 1
     })">Excluir</button></td>`;
     linha += '</tr>';
     linhas=linha
