@@ -26,14 +26,12 @@ function adicionaContato(){
     let linha = '<tr>'
     linha += `<td>${inputNomeContato.value}</td>`;
     linha += `<td>${inputNumeroContato.value}</td>`;
-    linha += `<td><button class="excluir-btn" onclick="excluirContato(${
-        nome.length - 1
-    })">Excluir</button></td>`;
     linha += '</tr>';
-    linhas=linha
+    linhas+=linha
 
     inputNomeContato.value =''
     inputNumeroContato.value =""
+}
 
     function atualizaContato() {
         const corpoAgenda = document.querySelector('tbody')
@@ -42,19 +40,18 @@ function adicionaContato(){
 
 function excluirContato(index){
     nome.splice(index,1)
-    contato.splice(index,1)
+    numero.splice(index,1)
     atualizarLinhas()
-    atualizarContato()
+    atualizaContato()
 }
 
 function atualizarLinhas() {
     linhas = "";
     for (let i = 0; i < nome.length; i++) {
     let linha = "<tr>";
-    linha += `<td>${contato[i]}</td>`;
+    linha += `<td>${nome[i]}</td>`;
     linha += `<td>${numero[i]}</td>`;
-    linha += `<td><button class="excluir-btn" onclick="excluirContato(${i})">Excluir</button></td>`;
     linha += "</tr>";
     linhas += linha;
     }
-}}
+}
