@@ -16,7 +16,7 @@
         </header>
         <form id="agenda">
             <input type="text" id="nome-contato" placeholder="Nome do contato"/>
-            <input type="text" id="numero-contato" placeholder="Número do contato" />
+            <input type="number" id="numero-contato" placeholder="Número do contato" />
             <button type="submit" >Cadastrar</button>
         </form>
         <table>
@@ -24,18 +24,16 @@
                 <tr>
                     <th>Contato</th>
                     <th> Número </th>
+                    <th>Excluir</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>nome 1</td>
-                    <td>Número 1</td>
-                </tr>
             </tbody>
             <tfoot>
                 <tr>
                     <td id="contato-final-valor">---</td>
                     <td id="contato-final-resultado">---</td>
+                    <td id="contato-final-excluir">---</td>
                 </tr>
             </tfoot>
         </table>
